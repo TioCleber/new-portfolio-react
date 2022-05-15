@@ -1,30 +1,9 @@
-import { useEffect, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
+import TypeWriter from "../../components/typewriter/TypeWriter";
 
 const Home = () => {
-  const [currentText, setCurrentText] = useState("");
-  const [index, setIndex] = useState(0);
-  const text = "atualmente estou atuando como dev Jr.";
-
-  useEffect(() => {
-    const currentTextId: any =
-      index < text.length &&
-      setTimeout(() => {
-        setCurrentText((value) => value + text.charAt(index));
-        setIndex((i) => i + 1);
-      }, 300);
-
-    !(index < text.length) &&
-      setTimeout(() => {
-        setCurrentText((value) => value.substring(0, value.length - 1));
-        index >= text.length && currentText.length <= 0 && setIndex(0);
-      }, 100);
-
-    return () => {
-      clearTimeout(currentTextId);
-    };
-  }, [currentText, index]);
+  const text = "Atualmente estou atuando como Desenvolvedor Jr.";
 
   return (
     <>
@@ -37,7 +16,7 @@ const Home = () => {
 
             <h2>Sou Cleber, e</h2>
 
-            <p>{currentText}</p>
+            <TypeWriter text={text} />
 
             <p>
               aqui você irá encontrar tudo sobre meu desenvolvimento
@@ -48,6 +27,10 @@ const Home = () => {
               até mais ;).
             </p>
           </div>
+        </section>
+
+        <section id="about">
+          <h1>Sobre</h1>
         </section>
       </main>
 

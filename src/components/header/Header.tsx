@@ -10,7 +10,7 @@ const Header = () => {
 
         <ul className="ul-header">
           <li className="li-header">
-            <Link className="link-header" to="sobre">
+            <Link className="link-header" to="#about">
               sobre
             </Link>
           </li>
