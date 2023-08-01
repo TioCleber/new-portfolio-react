@@ -3,7 +3,10 @@ import Header from "../../components/header/Header";
 import TypeWriter from "../../components/typewriter/TypeWriter";
 
 const Home = () => {
-  const text = "Atualmente estou atuando como Desenvolvedor Jr.";
+  const text = [
+    "Atualmente estou atuando como Desenvolvedor Pleno",
+    "Testando typewriter",
+  ];
 
   return (
     <>
