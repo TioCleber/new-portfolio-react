@@ -17,8 +17,7 @@ const Slider = lazy(
 const Home = () => {
   const text = [
     "Atualmente estou atuando como Desenvolvedor Pleno",
-    "Possuo experiências com:",
-    "JavaScript, JQuery, ReactJs, NodeJs, ExpressJs, Graphql, Git e muito mais...",
+    "Possuo experiências com: JavaScript, JQuery, ReactJs, NodeJs, ExpressJs, Graphql, Git e muito mais...",
   ];
 
   return (
