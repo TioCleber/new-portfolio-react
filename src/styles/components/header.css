@@ -1,21 +1,36 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   max-width: 21.875rem;
   width: 100%;
+  padding: 1rem;
+}
+
+.ul-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.li-header,
+.li-header-home {
+  min-width: 3.4375rem;
 }
 
 .li-header .link-header,
-.li-header .link-header img {
+.li-header .link-header-home img {
   display: block;
 }
 
-.li-header .link-header {
+.li-header .link-header-home {
   width: 15.625rem;
   margin: 0 auto;
 }
 
-.li-header .link-header img {
+.li-header .link-header-home img {
   width: 100%;
   border-radius: 50%;
-  border: 5px solid;
+  border: 0.3125rem solid;
 }

@@ -12,7 +12,7 @@ const ContactPage = lazy(() => import("./pages/contact/ContactPage"));
 
 function App() {
   return (
-    <main className="main-app">
+    <div className="main-app">
       <BrowserRouter>
         <Header />
 
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </Suspense>
       </BrowserRouter>
-    </main>
+    </div>
   );
 }
 

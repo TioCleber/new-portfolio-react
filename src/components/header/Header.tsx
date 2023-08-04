@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import image from '../../assets/tioCleber.jpg'
 
 import '../../styles/components/header.css'
+import Footer from "../footer/Footer";
 
 const Header = () => {
   return (
@@ -9,11 +10,11 @@ const Header = () => {
       <nav className="nav-header">
         <ul className="ul-header">
           <li className="li-header">
-            <Link className="link-header" to="/">
+            <Link className="link-header-home" to="/">
               <img src={image} alt="cleber" title="cleber" />
             </Link>
           </li>
-          <li className="li-header">
+          <li className="li-header-home">
             <Link className="link-header" to="/">
               Cleber
             </Link>
@@ -46,6 +47,8 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <Footer />
     </header>
   );
 };

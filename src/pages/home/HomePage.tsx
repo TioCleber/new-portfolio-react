@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <>
-      <main>
+      <main className="main-page">
         <section>
           <div>
             <h1>Olá seja muito bem-vindo</h1>

@@ -1,8 +1,8 @@
 const About = () => {
   return (
-    <section id="about" style={{ height: 500 }}>
+    <main className="main-page" id="about">
       <h1>Sobre</h1>
-    </section>
+    </main>
   );
 };
 
