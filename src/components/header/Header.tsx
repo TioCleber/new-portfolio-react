@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import image from '../../assets/tioCleber.jpg'
 
+import '../../styles/components/header.css'
+
 const Header = () => {
   return (
     <header className="header">
@@ -8,7 +10,7 @@ const Header = () => {
         <ul className="ul-header">
           <li className="li-header">
             <Link className="link-header" to="/">
-              <img src={image} alt="cleber" title="cleber image" />
+              <img src={image} alt="cleber" title="cleber" />
             </Link>
           </li>
           <li className="li-header">
@@ -20,7 +22,7 @@ const Header = () => {
 
         <ul className="ul-header">
           <li className="li-header">
-            <Link className="link-header" to="#about">
+            <Link className="link-header" to="/sobre">
               sobre
             </Link>
           </li>

@@ -1,0 +1,21 @@
+.header {
+  height: 100%;
+  max-width: 21.875rem;
+  width: 100%;
+}
+
+.li-header .link-header,
+.li-header .link-header img {
+  display: block;
+}
+
+.li-header .link-header {
+  width: 15.625rem;
+  margin: 0 auto;
+}
+
+.li-header .link-header img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid;
+}
