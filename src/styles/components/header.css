@@ -6,6 +6,8 @@
   max-width: 21.875rem;
   width: 100%;
   padding: 1rem;
+  border-right: 1px solid;
+  background: #fff;
 }
 
 .ul-header {

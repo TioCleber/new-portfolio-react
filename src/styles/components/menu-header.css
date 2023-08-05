@@ -1,0 +1,31 @@
+.container-menu-header {
+  position: relative;
+  max-width: 21.875rem;
+  width: 75%;
+  min-height: 4.375rem;
+}
+
+.menu-header-content {
+  width: 100%;
+}
+
+.button-menu-header {
+  margin: 1rem 0;
+  border: 1px solid;
+  padding: 0.625rem 0.9375rem;
+}
+
+.container-menu-header.active .menu-header-content {
+  height: 100vh;
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  z-index: 1000;
+}
+
+.container-menu-header.active .button-menu-header {
+  position: absolute;
+  top: 0;
+  right: -2.35rem;
+  z-index: 1000;
+}

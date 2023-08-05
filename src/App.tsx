@@ -3,6 +3,8 @@ import { Suspense, lazy } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/header/Header";
 import "./styles/global.css";
+import useDevice from "./hooks/useDevice";
+import MenuHeader from "./components/header/Menu";
 
 const HomePage = lazy(() => import("./pages/home/HomePage"));
 const AboutPage = lazy(() => import("./pages/about/AboutPage"));
@@ -11,10 +13,12 @@ const SkillsPAge = lazy(() => import("./pages/skills/SkillsPage"));
 const ContactPage = lazy(() => import("./pages/contact/ContactPage"));
 
 function App() {
+  const { isMobile } = useDevice();
+
   return (
     <div className="main-app">
       <BrowserRouter>
-        <Header />
+        {isMobile ? <MenuHeader /> : <Header />}
 
         <Suspense fallback={"carregando..."}>
           <Routes>
